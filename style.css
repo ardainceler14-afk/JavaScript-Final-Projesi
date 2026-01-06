@@ -1,0 +1,17 @@
+body { font-family: Arial; background-color: #f0f0f0; max-width: 800px; margin: 0 auto; padding: 20px; transition: 0.2s; }
+.kutu { border: 2px solid #555; background-color: #ecedf1; padding: 15px; margin-bottom: 15px; text-align: center; color: #333; }
+h2 { border-bottom: 1px solid #555; font-size: 16px; padding-bottom: 5px; margin-top: 0; }
+.kart-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.kart { border: 1px solid #555; background: white; padding: 10px; width: 150px; text-align: left; }
+.kart h3 { font-size: 13px; margin: 0; border-bottom: 1px solid #eee; }
+
+/* Dark Mod */
+body.karanlik-tema { background-color: #222; color: #eee; }
+body.karanlik-tema .kutu { background-color: #333; border-color: #777; color: #eee; }
+body.karanlik-tema .kart { background-color: #444; border-color: #666; color: #eee; }
+
+/* Skeleton Animasyonu */
+.skeleton-kart { width: 150px; height: 80px; background: #ddd; margin: 5px; display: inline-block; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
+
+button { cursor: pointer; background: #5d616d; color: white; border: 1px solid #333; padding: 4px; }

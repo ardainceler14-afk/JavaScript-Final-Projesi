@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İsim Analizi - Final Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="kutu">
+        <h1>İsimden Ülke Analizi</h1>
+        <button id="temaDegistir">Karanlık / Aydınlık Mod</button>
+    </header>
+
+    <section class="kutu">
+        <h2>ARAMA / FİLTRE</h2>
+        <div class="arama-grubu">
+            <input type="text" id="isimGiris" placeholder="İsim Girin...">
+            <button id="araButon">Ara / Listele</button>
+        </div>
+        <br>
+        <div class="kontroller">
+            <select id="filtreleme">
+                <option value="hepsi">Filtrele: Tümü</option>
+                <option value="yuksek">Filtrele: %10 Üstü</option>
+            </select>
+            <select id="siralama">
+                <option value="yok">Sıralama: Yok</option>
+                <option value="az">A'dan Z'ye</option>
+                <option value="za">Z'den A'ya</option>
+            </select>
+        </div>
+    </section>
+
+    <div id="istatistikAlani" class="kutu" style="display:none;">
+        <p>Toplam: <span id="sayacToplam">0</span> | Gösterilen: <span id="sayacGosterilen">0</span> | Favori: <span id="sayacFavori">0</span></p>
+    </div>
+
+    <div class="kutu" id="mesajKutusu">
+        <span id="yukleniyorMetni" style="display:none;">Yükleniyor...</span>
+        <div id="skeletonlar" style="display:none;">
+            <div class="skeleton-kart"></div>
+            <div class="skeleton-kart"></div>
+            <div class="skeleton-kart"></div>
+        </div>
+        <span id="hataMesaj" style="display:none; color:red;">Bir sorun oluştu!</span>
+    </div>
+
+    <section class="kutu">
+        <h2>KART LİSTESİ</h2>
+        <div id="listeKapsayici" class="kart-grid"></div>
+        <button id="dahaFazlaBtn" style="display:none; margin-top:10px;">Daha Fazla Yükle</button>
+    </section>
+
+    <section id="detayPanel" class="kutu" style="display:none;">
+        <h2>DETAY PANELİ</h2>
+        <div class="detay-icerik">
+            <h3 id="detayBaslik">DETAYLAR</h3>
+            <p id="bilgi1"></p>
+            <p id="bilgi2"></p>
+            <button id="kapatBtn">Geri / Kapat</button>
+        </div>
+    </section>
+
+    <section class="kutu">
+        <h2>HAKKIMIZDA</h2>
+        <p>Javascirpt Final Projesi</p>
+    </section>
+
+    <section class="kutu">
+        <h2>İletişim</h2>
+        <p>E-Posta: 2505903025@ogrenci.karabuk.edu.tr</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
